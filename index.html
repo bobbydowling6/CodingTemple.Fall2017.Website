@@ -3,9 +3,56 @@
 	<head>
 		<title>Coding Temple Fall 2017</title>
 		<meta charset="utf-8">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: "Arial", sans-serif;
+                font-size: 18px;
+            }
+            .container{
+                width: 960px;
+                padding-right: 30px;
+                padding-left: 30px;
+                margin: 0 auto;
+            }
+            body{
+                color:black;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 22px;
+                font-family: "Open Sans", "Helvetica Neuve", Helvetica, Arial, sans-serif;
+            }
+
+            h2, h3, h4{
+                color: #45a2da;
+                 font-size: 14px;
+                 font-weight: 400;
+                 text-transform: uppercase;
+            }
+
+            a{
+                text-decoration: none;
+            }
+           header a{
+                color: black;
+            }
+            header a:hover{
+                color: #45a2da;
+            }
+            nav{
+                text-align: right;
+            }
+
+            footer{
+                background-color: black;
+            }
+            footer a{
+                color:white;
+            }
+        </style>
 	</head>
 		<body>
-			<header>
+			<header class="container">
 				<h1>Coding Temple</h1>
                 <nav>
                     <a href="index.html">Home</a>
@@ -15,17 +62,23 @@
                 </nav>
 			</header>
             <main>
+                <section class="container">
                 <h2>Classes</h2>
                 <p>Coding Temple offers classes at our two campuses located in Schaumburg, and in Chicago. Currently we offer full and part-time classes. Our next classes start January 4th, 2016.</p>
                 <a href="apply.html">Start your application...</a>
+                </section>
+                <section class="container">
                 <h2>Course Curriculum</h2>
                 <p>Technologies covered: JavaScript, C#, ASP.NET MVC, Entity Framework, HTML/CSS, SQL, Git, and more! We will also teach you how to learn as our end goal is to make you adaptable to other similar technologies and future technologies.</p>
                 <a href="courses.html">View our Curriculum...</a>
+                </section>
+                <section class="container">
                 <h2>Current Students</h2>
                 <p>Our current cohort consists of students from various backgrounds and knowledge about the IT industry.</p>
                 <a href="students.html">View more on our students...</a>
+                </section>
             </main>
-            <footer>
+            <footer class="container">
                     <a href="index.html">Home</a>
                     <a href="courses.html">Courses</a>
                     <a href="students.html">Students</a>
