@@ -45,14 +45,29 @@
            header a{
                 color: black;
             }
-            header a:hover{
+
+            header li{
+                display: inline-block;
+            }
+            header li a{
+                color: black;
+            }
+            header li:hover{
+                box-shadow: inset 0 3px 0 0 #45a2da;
                 color: #45a2da;
             }
             nav{
-                text-align: right;
+
             }
            p{
                 color: #848484;
+            }
+
+             .alt-link li{
+                background-color: black;
+            }
+             .alt-link li a{
+                color: white;
             }
 
             footer{
@@ -72,10 +87,22 @@
 			<header class="container">
 				<h1>Coding Temple</h1>
                 <nav>
-                    <a href="index.html">Home</a>
-                    <a href="courses.html">Courses</a>
-                    <a href="students.html">Students</a>
-                    <a href="apply.html">Apply Now</a>
+                    <ul>
+
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="courses.html">Courses</a>
+                        </li>
+                        <li>
+                            <a href="students.html">Students</a>
+                        </li>
+                        <li class=".alt-link">
+                        <li>
+                            <a href="apply.html">Apply Now</a>
+                        </li>
+                    </ul>
                 </nav>
 			</header>
             <main>
@@ -93,17 +120,27 @@
                 </section>
             </main>
             <footer class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="courses.html">Courses</a>
+                        </li>
+                        <li>
+                            <a href="students.html">Students</a>
+                        </li>
+                        <li>
+                            <a href="apply.html">Apply Now</a>
+                        </li>
+                    </ul>
+                </nav>
                 <aside>
                     <h3>332 S Michigan</h3>
                     <h3>9th Floor</h3>
                     <h3>Chicago, IL 60604</h3>
-                    </aside>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="courses.html">Courses</a>
-                    <a href="students.html">Students</a>
-                    <a href="apply.html">Apply Now</a>
-                </nav>
+                </aside>
             </footer>
 		</body>
 </html>
