@@ -1,91 +1,15 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Coding Temple Fall 2017</title>
+		<title>Coding Temple</title>
 		<meta charset="utf-8">
-        <style>
-            *{
-                box-sizing: border-box;
-                font-family: "Arial", sans-serif;
-                font-size: 18px;
-            }
-            .container{
-                width: 960px;
-                padding-right: 30px;
-                padding-left: 30px;
-                margin: 0 auto;
-            }
-            body{
-                background: white;
-                color:black;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 22px;
-                font-family: "Open Sans", "Helvetica Neuve", Helvetica, Arial, sans-serif;
-            }
-            h1{
-                font-size: 32px;
-            }
-            h3{
-                color: #848484;
-            }
-
-           h1, h2, h3, h4{
-                color: #45a2da;
-            }
-            h2, h3, h4{
-                font-size: 14px;
-                 font-weight: 400;
-                 text-transform: uppercase;
-            }
-
-            a{
-                text-decoration: none;
-            }
-           header a{
-                color: black;
-            }
-
-            header li{
-                display: inline-block;
-            }
-            header li a{
-                color: black;
-            }
-            header li:hover{
-                box-shadow: inset 0 3px 0 0 #45a2da;
-                color: #45a2da;
-            }
-            nav{
-
-            }
-           p{
-                color: #848484;
-            }
-
-             .alt-link li{
-                background-color: black;
-            }
-             .alt-link li a{
-                color: white;
-            }
-
-            footer{
-                background-color: black;
-                border-top: 1px solid rgba(0,0,0,0.085);
-                box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.8);
-            }
-            footer a{
-                color:white;
-            }
-            footer aside h3{
-                color: #848484;
-            }
-        </style>
+        <link rel="stylesheet" href="main.css">
 	</head>
 		<body>
 			<header class="container">
-				<h1>Coding Temple</h1>
+				<div id="logo" title="logo">
+                    <img src="images/logo.png" />
+                </div>
                 <nav>
                     <ul>
 
@@ -98,29 +22,52 @@
                         <li>
                             <a href="students.html">Students</a>
                         </li>
-                        <li class=".alt-link">
-                        <li>
+                        <li class="alt-link">
                             <a href="apply.html">Apply Now</a>
                         </li>
                     </ul>
                 </nav>
+
 			</header>
             <main>
                 <section class="container">
+                <div id="classes" title="classes">
+                    <img src="images/classes.png" />
+                </div>
                 <h2>Classes</h2>
-                <p>Coding Temple offers classes at our two campuses located in Schaumburg, and in Chicago. Currently we offer full and part-time classes. Our next classes start January 4th, 2016. <a href="apply.html">Start your application...</a></p>
+                    <p>Coding Temple offers classes at our two campuses located in Schaumburg, and in Chicago. Currently we offer full and part-time classes. Our next classes start January 4th, 2016. <a href="apply.html">Start your application...</a></p>
+
                 </section>
                 <section class="container">
+
+                    <div id="curriculum" title="curriculum">
+                    <img src="images/curriculum.png" />
+                    </div>
+
                 <h2>Course Curriculum</h2>
-                <p>Technologies covered: JavaScript, C#, ASP.NET MVC, Entity Framework, HTML/CSS, SQL, Git, and more! We will also teach you how to learn as our end goal is to make you adaptable to other similar technologies and future technologies. <a href="courses.html">View our Curriculum...</a></p>
+                    <p>Technologies covered: JavaScript, C#, ASP.NET MVC, Entity Framework, HTML/CSS, SQL, Git, and more! We will also teach you how to learn as our end goal is to make you adaptable to other similar technologies and future technologies. <a href="courses.html">View our Curriculum...</a></p>
+
                 </section>
                 <section class="container">
+
+                    <div id="students" title="students">
+                    <img src="images/students.png" />
+                </div>
+
                 <h2>Current Students</h2>
-                <p>Our current cohort consists of students from various backgrounds and knowledge about the IT industry. <a href="students.html">View more on our students...</a></p>
+                    <p>Our current cohort consists of students from various backgrounds and knowledge about the IT industry. <a href="students.html">View more on our students...</a></p>
+
                 </section>
             </main>
-            <footer class="container">
+        <footer class="container">
+
+            <div id="logo_small" title="logo" >
+                <img src="images/logo_small.png" />
+            </div>
+                  <p> The skills and experience that students achieve at Coding Temple takes them a long way. We offer small classes, so students are able to have a more one on one interaction with our teachers. Our curriculum is designed to make students feel confident and be successful in the workforce once they have completed our course</p>
+
                 <nav>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li>
                             <a href="index.html">Home</a>
@@ -141,6 +88,6 @@
                     <h3>9th Floor</h3>
                     <h3>Chicago, IL 60604</h3>
                 </aside>
-            </footer>
-		</body>
+        </footer>
+    </body>
 </html>

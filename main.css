@@ -1,0 +1,134 @@
+*{
+                box-sizing: border-box;
+                font-family: "Arial", sans-serif;
+                font-size: 18px;
+
+            }
+            .container{
+                width: 960px;
+                padding-right: 30px;
+                padding-left: 30px;
+                margin: 0 auto;
+
+            }
+            body{
+                background: white;
+                color:black;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 22px;
+                font-family: "Open Sans", "Helvetica Neuve", Helvetica, Arial, sans-serif;
+
+            }
+
+            h1{
+                font-size: 32px;
+            }
+            h3{
+                color: #848484;
+            }
+
+           h1, h2, h3, h4{
+                color: #45a2da;
+            }
+            h2, h3, h4{
+                font-size: 14px;
+                 font-weight: 400;
+                 text-transform: uppercase;
+            }
+
+            a{
+                text-decoration: none;
+            }
+            header{
+                display: flex;
+                justify-content: space-between;
+            }
+            header nav ul{
+                display:  flex;
+                padding-left: 0px;
+                list-style-type: none;
+            }
+            main{
+                display:  flex;
+                flex-direction: column;
+            }
+
+           header a{
+                color: black;
+            }
+
+            header li{
+                display: inline-block;
+            }
+            header li a{
+                color: black;
+            }
+            header li:hover{
+                box-shadow: inset 0 3px 0 0 #45a2da;
+                color: #45a2da;
+            }
+            #logo{
+            background-image: url(CodingTemple.Fall2017.Website/images/logo.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+            #logo_small{
+            background-image: url(CodingTemple.Fall2017.Website/images/logo_small.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+            #classes{
+            background-image: url(CodingTemple.Fall2017.Website/images/classes.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                float: right;
+            }
+            #curriculum{
+            background-image: url(CodingTemple.Fall2017.Website/images/curriculum.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                float: left;
+            }
+            #students{
+                background-image: url(CodingTemple.Fall2017.Website/images/students.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                float: right
+            }
+
+            nav{
+
+            }
+            section{
+                display: flex;
+            }
+            section > *{
+                flex-basis: 50%;
+            }
+           p{
+                color: #848484;
+            }
+
+             .alt-link{
+                background-color: black;
+            }
+             .alt-link a{
+                color: white;
+            }
+
+            footer{
+                background-color: black;
+                border-top: 1px solid rgba(0,0,0,0.085);
+                box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.8);
+                display: flex;
+            }
+            footer > *{
+                flex-basis: 33%;
+            }
+            footer a{
+                color:white;
+            }
+            footer aside h3{
+                color: #848484;
+            }
