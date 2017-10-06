@@ -1,5 +1,4 @@
 *{
-                box-sizing: border-box;
                 font-family: "Arial", sans-serif;
                 font-size: 18px;
 
@@ -12,6 +11,7 @@
 
             }
             body{
+                margin: 0px;
                 background: white;
                 color:black;
                 font-weight: 300;
@@ -26,6 +26,7 @@
             }
             h3{
                 color: #848484;
+                text-align: center;
             }
 
            h1, h2, h3, h4{
@@ -43,6 +44,7 @@
             header{
                 display: flex;
                 justify-content: space-between;
+                padding-top: 10px;
             }
             header nav ul{
                 display:  flex;
@@ -59,6 +61,7 @@
             }
 
             header li{
+                padding: 16px;
                 display: inline-block;
             }
             header li a{
@@ -78,6 +81,10 @@
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }
+
+#logo_small > img{
+    width: 138px;
+}
             #classes{
             background-image: url(CodingTemple.Fall2017.Website/images/classes.png);
                 background-size: 100% 100%;
@@ -125,11 +132,19 @@
 
             }
             footer > *{
+                padding: 10px;
                 flex-basis: 33%;
             }
+footer nav ul{
+    text-align: center;
+}
             footer a{
                 color:white;
             }
             footer aside h3{
                 color: #848484;
             }
+
+img{
+    width: 100%;
+}
