@@ -1,12 +1,16 @@
 *{
                 font-family: "Arial", sans-serif;
                 font-size: 18px;
+                box-sizing: border-box;
 
             }
+a {
+    text-decoration: none;
+}
             .container{
-                width: 960px;
-                padding-right: 30px;
-                padding-left: 30px;
+                width: 96%;
+                padding-right: 10%;
+                padding-left: 10%;
                 margin: 0 auto;
 
             }
@@ -15,8 +19,8 @@
                 background: white;
                 color:black;
                 font-weight: 300;
-                font-size: 16px;
-                line-height: 22px;
+                font-size: 1em;
+                line-height: 1.375em;
                 font-family: "Open Sans", "Helvetica Neuve", Helvetica, Arial, sans-serif;
 
             }
@@ -33,23 +37,21 @@
                 color: #45a2da;
             }
             h2, h3, h4{
-                font-size: 14px;
+                font-size: 0.875em;
                  font-weight: 400;
                  text-transform: uppercase;
             }
 
-            a{
-                text-decoration: none;
-            }
             header{
                 display: flex;
                 justify-content: space-between;
-                padding-top: 10px;
+                flex-direction: column;
             }
             header nav ul{
                 display:  flex;
                 padding-left: 0px;
                 list-style-type: none;
+                flex-direction: column;
             }
             main{
                 display:  flex;
@@ -61,7 +63,7 @@
             }
 
             header li{
-                padding: 16px;
+                padding: .625em;
                 display: inline-block;
             }
             header li a{
@@ -110,8 +112,9 @@
 
             }
             section > *{
-                flex-basis: 50%;
+                flex-basis: auto;
             }
+
           footer p{
                 color: #848484;
               flex-direction: column;
@@ -128,7 +131,7 @@
                 background-color: black;
                 border-top: 1px solid rgba(0,0,0,0.085);
                 box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.8);
-                display: inline-flex;
+                display: flex;
 
             }
             footer > *{
@@ -136,7 +139,8 @@
                 flex-basis: 33%;
             }
 footer nav ul{
-    text-align: center;
+    padding 0px;
+    float: left;
 }
             footer a{
                 color:white;
@@ -148,3 +152,60 @@ footer nav ul{
 img{
     width: 100%;
 }
+
+@media print {
+    footer {
+        color: black;
+        background-color: white;
+    }
+}
+
+
+/*Rules for mobile*/
+
+@media all and (min-width: 480px) {
+
+
+    header {
+        flex-direction: row;
+    }
+    header nav ul {
+        flex-direction: row;
+    }
+
+
+    section > * {
+        flex-basis: 50%;
+    }
+
+    section > div{
+        display: block;
+    }
+
+
+}
+
+
+/*Rules for tablet*/
+
+@media all and (min-width: 600px) {
+    #logo {
+        width: 204px;
+    }
+
+}
+
+
+/*Rules for laptop / small desktop */
+
+@media all and (min-width: 992px) {
+
+
+
+
+}
+
+
+/*Rules for laptop / small desktop */
+
+@media all and (min-width: 1200px) {}
