@@ -72,3 +72,6 @@ else
 {
     alert (g)
 }
+
+//Problem 4
+
