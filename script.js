@@ -75,3 +75,83 @@ else
 
 //Problem 4
 
+for (var x=0; x<=15; x++) {
+    if (x === 0) {
+        console.log(x + " is even");
+    }
+    else if (x % 2 === 0) {
+        console.log(x + " is even");
+    }
+    else {
+        console.log(x + " is odd");
+    }
+}
+
+//Problem 5
+
+for (var i=1; i<=100; i++) {
+    if ((i % 3 === 0) && (i % 5 === 0))
+    {
+        console.log(i + " Fizz Buzz");
+    }
+    else if (i % 3 === 0)
+    {
+        console.log(i + " Fizz");
+    }
+    else if (i % 5 === 0)
+    {
+        console.log(i + " Buzz");
+    }
+    else
+    {
+        console.log(i);
+    }
+}
+
+//Problem 6
+
+/*function count (){
+    var currentCount = 0;
+    for (var i=1; i<1000; i++) {
+    if (i % 3 === 0)
+    {
+       currentCount = currentCount + 1;
+    }
+    }
+    console.log(currentCount);
+}
+*/
+//Problem 7
+function pattern () {
+    var x,y,chr;
+    for(x=1; x <=6; x++)
+        {
+            for (y=1; y<x; y++)
+                {
+                    chr=chr + ("1");
+                }
+
+            console.log(chr);
+            chr='';
+        }
+}
+
+function system () {
+    for (int i=1; i<=5;i++){
+        for(int j=1;j<=5-i;j++){
+
+    System.out.print(" ");
+    }
+
+    for(int k=1;k<=i;k++){
+
+    System.out.print(k);
+    }
+
+    for(int l=1;l<i;l++){
+
+    System.out.print(i-l);
+    }
+System.out.println();
+    }
+}
