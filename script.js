@@ -110,7 +110,7 @@ for (var i=1; i<=100; i++) {
 
 //Problem 6
 
-/*function count (){
+function count (){
     var currentCount = 0;
     for (var i=1; i<1000; i++) {
     if (i % 3 === 0)
@@ -120,38 +120,129 @@ for (var i=1; i<=100; i++) {
     }
     console.log(currentCount);
 }
-*/
-//Problem 7
-function pattern () {
-    var x,y,chr;
-    for(x=1; x <=6; x++)
-        {
-            for (y=1; y<x; y++)
-                {
-                    chr=chr + ("1");
-                }
 
-            console.log(chr);
-            chr='';
+//Problem 8
+(function () {
+    "use strict";
+
+
+    var problem8 = function () {
+        var numLines, i, j, currentLine;
+        numLines = 5;
+        //Step 1 : Get Something out on the console!
+        //window.console.log(numLines);
+
+        //Step 2 : Get the correct "lines" on the console:
+//        for (i = 1; i <= numLines; i = i + 1) {
+//            window.console.log(i);
+//        }
+
+        //Step 3 : use a nested loop to count up to "i" on each line
+//        for (i = 1; i <= numLines; i = i + 1) {
+//            currentLine = "";
+//            for (j = 1; j <= i; j = j+ 1) {
+//                currentLine = currentLine + j;
+//            }
+//            window.console.log(currentLine);
+//        }
+
+        //Step 4 : use a second nested loop to add space to the front of the line
+//        for (i = 1; i <= numLines; i = i + 1) {
+//
+//            currentLine = "";
+//            for (j = 1; j <= (numLines - i); j = j + 1) {
+//                currentLine = currentLine + " ";
+//            }
+//
+//
+//            for (j = 1; j <= i; j = j + 1) {
+//                currentLine = currentLine + j;
+//            }
+//            window.console.log(currentLine);
+//        }
+
+        //Step 5: Counting back down to 0;
+
+        for (i = 1; i <= numLines; i = i + 1) {
+
+            currentLine = "";
+//            for (j = 1; j <= (numLines - i); j = j + 1) {
+//                currentLine = currentLine + " ";
+//            }
+
+            //I can use the padStart helper to replace that first string:
+            currentLine = currentLine.padStart(numLines - i, " ");
+
+
+            for (j = 1; j <= i; j = j + 1) {
+                currentLine = currentLine + j;
+            }
+
+            for (j = i - 1; j > 0; j = j - 1) {
+                currentLine = currentLine + j;
+            }
+
+            window.console.log(currentLine);
         }
-}
+    };
 
-function system () {
-    for (int i=1; i<=5;i++){
-        for(int j=1;j<=5-i;j++){
+    problem8();
+}());
 
-    System.out.print(" ");
-    }
+(function () {
+    "use strict";
+    var problem8 = function (numLines) {
+        if(!numLines){
+            numLines = 5;
+        }
+        var i, j, currentLine;
+        for (i = 1; i <= numLines; i++) {
+            currentLine = "";
+            currentLine = currentLine.padStart(numLines - i, " ");
+            for (j = 1; j <= i; j++) {
+                currentLine += j;
+            }
+            for (j = i - 1; j > 0; j--) {
+                currentLine += j;
+            }
+            window.console.log(currentLine);
+        }
+    };
 
-    for(int k=1;k<=i;k++){
+    problem8(8);
+}());
 
-    System.out.print(k);
-    }
+//Problem 9
+(function () {
+    "use strict";
+    var problem9 = function (numLines) {
+        if(!numLines){
+            numLines = 5;
+        }
+        var i, j, currentLine;
+        for (i = 1; i <= numLines; i++) {
+            currentLine = "";
+            currentLine = currentLine.padStart(numLines - i, " ");
+            for (j = 1; j <= i; j++) {
+                currentLine += j;
+            }
+            for (j = i - 1; j > 0; j--) {
+                currentLine += j;
+            }
+            window.console.log(currentLine);
+        }
+        for (i = numLines - 1; i > 0; i--) {
+            currentLine = "";
+            currentLine = currentLine.padStart(numLines - i, " ");
+            for (j = 1; j <= i; j++) {
+                currentLine += j;
+            }
+            for (j = i - 1; j > 0; j--) {
+                currentLine += j;
+            }
+            window.console.log(currentLine);
+        }
+    };
 
-    for(int l=1;l<i;l++){
-
-    System.out.print(i-l);
-    }
-System.out.println();
-    }
-}
+    problem9(9);
+}());
