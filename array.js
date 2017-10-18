@@ -1,3 +1,4 @@
+//JavaScript Objects and Arrays
 //Problem 1
 function formatDate(date) {
   var monthNames = [
@@ -207,3 +208,70 @@ console.log(Second_Greatest_Lowest([1,2,3,4,5]));
 //Problem 15
 var str = "Thequickbrownfoxjumpsoverthelazydog";
 str.split("").filter(function(x, n, s) { return s.indexOf(x) == n }).join("");
+
+//JavaScript Recursion
+//Problem 1
+function factorial(x)
+{
+    if (x === 0)
+    {
+        return 1;
+    }
+        return x * factorial(x-1);
+}
+console.log(factorial(5));
+//Problem 2
+var range = function(start_num, end_num)
+{
+    if (end_num - start_num === 2)
+        {
+            return [start_num - 1];
+        }
+    else
+        {
+            var list = range(start_num, end_num - 1);
+            list.push(end_num - 1);
+            return list;
+        }
+};
+
+console.log(range(2,50));
+//Problem 3
+var exponent = function(a, n)
+{
+   if (n === 0)
+   {
+    return 1;
+    }
+  else
+  {
+    return a * exponent(a, n-1);
+  }
+};
+
+console.log(exponent(8, 2));
+//Problem 4
+function merge_sort(left_part, right_part)
+{
+    var i = 0;
+    var j = 0;
+    var results = [];
+
+    while (i < left_part.length || j < right_part.length) {
+        if (i === left_part.length) {
+            // j is the only index left_part
+            results.push(right_part[j]);
+            j++;
+        }
+        else if (j === right_part.length || left_part[i] <= right_part[j]) {
+            results.push(left_part[i]);
+            i++;
+        } else {
+            results.push(right_part[j]);
+            j++;
+        }
+    }
+    return results;
+}
+
+console.log(merge_sort([1,3,4], [3,7,9]));
