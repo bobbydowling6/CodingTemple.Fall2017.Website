@@ -209,6 +209,27 @@ console.log(Second_Greatest_Lowest([1,2,3,4,5]));
 var str = "Thequickbrownfoxjumpsoverthelazydog";
 str.split("").filter(function(x, n, s) { return s.indexOf(x) == n }).join("");
 
+function removeDuplicates(input){
+    var i, j, output, alreadyInOutput;
+
+    output = "";
+    for(i = 0; i < input.length; i++){
+        alreadyInOutput = false;
+        for(j = 0; j < output.length; j++){
+            if(input[i].toLocaleLowerCase() === output[j].toLocaleLowerCase()){
+                alreadyInOutput = true;
+            }
+        }
+        if(!alreadyInOutput){
+            output += input[i];
+        }
+    }
+    return output;
+
+}
+
+console.log(removeDuplicates("Thequickbrownfoxjumpsoverthelazydog"));
+console.log("Should be: Thequickbrownfxjmpsvlazydg");
 //JavaScript Recursion
 //Problem 1
 function factorial(x)
