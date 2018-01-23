@@ -1,155 +1,179 @@
-*{
-                font-family: "Arial", sans-serif;
-                font-size: 18px;
-                box-sizing: border-box;
+* {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
 
-            }
+}
+
 a {
     text-decoration: none;
 }
-            .container{
-                width: 96%;
-                padding-right: 10%;
-                padding-left: 10%;
-                margin: 0 auto;
 
-            }
-            body{
-                margin: 0px;
-                background: white;
-                color:black;
-                font-weight: 300;
-                font-size: 1em;
-                line-height: 1.375em;
-                font-family: "Open Sans", "Helvetica Neuve", Helvetica, Arial, sans-serif;
+.container {
+    width: 96%;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin: 0 auto;
 
-            }
+}
 
-            h1{
-                font-size: 32px;
-            }
-            h3{
-                color: #848484;
-                text-align: center;
-            }
+body {
+    margin: 0px;
+    background: white;
+    color: black;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.375em;
+    font-family: "Open Sans", "Helvetica Neuve", Helvetica, Arial, sans-serif;
 
-           h1, h2, h3, h4{
-                color: #45a2da;
-            }
-            h2, h3, h4{
-                font-size: 0.875em;
-                 font-weight: 400;
-                 text-transform: uppercase;
-            }
+}
 
-            header{
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
-            }
-            header nav ul{
-                display:  flex;
-                padding-left: 0px;
-                list-style-type: none;
-                flex-direction: column;
-            }
-            main{
-                display:  flex;
-                flex-direction: column;
-            }
+h1 {
+    font-size: 32px;
+}
 
-           header a{
-                color: black;
-            }
+h3 {
+    color: #848484;
+    text-align: center;
+}
 
-            header li{
-                padding: .625em;
-                display: inline-block;
-            }
-            header li a{
-                color: black;
-            }
-            header li:hover{
-                box-shadow: inset 0 3px 0 0 #45a2da;
-                color: #45a2da;
-            }
-            #logo{
-            background-image: url(CodingTemple.Fall2017.Website/images/logo.png);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-            }
-            #logo_small{
-            background-image: url(CodingTemple.Fall2017.Website/images/logo_small.png);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-            }
+h1,
+h2,
+h3,
+h4 {
+    color: #45a2da;
+}
 
-#logo_small > img{
+h2,
+h3,
+h4 {
+    font-size: 0.875em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 0px;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header a {
+    color: black;
+}
+
+header li {
+    padding: .625em;
+    display: inline-block;
+}
+
+header li a {
+    color: black;
+}
+
+header li:hover {
+    box-shadow: inset 0 3px 0 0 #45a2da;
+    color: #45a2da;
+}
+
+#logo {
+    background-image: url(CodingTemple.Fall2017.Website/images/logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#logo_small {
+    background-image: url(CodingTemple.Fall2017.Website/images/logo_small.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#logo_small > img {
     width: 138px;
 }
-            #classes{
-            background-image: url(CodingTemple.Fall2017.Website/images/classes.png);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-            }
-            #curriculum{
-            background-image: url(CodingTemple.Fall2017.Website/images/curriculum.png);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-            }
-            #students{
-                background-image: url(CodingTemple.Fall2017.Website/images/students.png);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-            }
+
+#classes {
+    background-image: url(CodingTemple.Fall2017.Website/images/classes.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#curriculum {
+    background-image: url(CodingTemple.Fall2017.Website/images/curriculum.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#students {
+    background-image: url(CodingTemple.Fall2017.Website/images/students.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 
-            nav{
+nav {}
 
-            }
-            section{
-                display: flex;
+section {
+    display: flex;
 
-            }
-            section > *{
-                flex-basis: auto;
-            }
+}
 
-          footer p{
-                color: #848484;
-              flex-direction: column;
-            }
+section > * {
+    flex-basis: auto;
+}
 
-             .alt-link{
-                background-color: black;
-            }
-             .alt-link a{
-                color: white;
-            }
+footer p {
+    color: #848484;
+    flex-direction: column;
+}
 
-            footer{
-                background-color: black;
-                border-top: 1px solid rgba(0,0,0,0.085);
-                box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.8);
-                display: flex;
+.alt-link {
+    background-color: black;
+}
 
-            }
-            footer > *{
-                padding: 10px;
-                flex-basis: 33%;
-            }
-footer nav ul{
+.alt-link a {
+    color: white;
+}
+
+footer {
+    background-color: black;
+    border-top: 1px solid rgba(0, 0, 0, 0.085);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
+    display: flex;
+
+}
+
+footer > * {
+    padding: 10px;
+    flex-basis: 33%;
+}
+
+footer nav ul {
     padding 0px;
     float: left;
 }
-            footer a{
-                color:white;
-            }
-            footer aside h3{
-                color: #848484;
-            }
 
-img{
+footer a {
+    color: white;
+}
+
+footer aside h3 {
+    color: #848484;
+}
+
+img {
     width: 100%;
 }
 
@@ -178,7 +202,7 @@ img{
         flex-basis: 50%;
     }
 
-    section > div{
+    section > div {
         display: block;
     }
 
@@ -198,12 +222,7 @@ img{
 
 /*Rules for laptop / small desktop */
 
-@media all and (min-width: 992px) {
-
-
-
-
-}
+@media all and (min-width: 992px) {}
 
 
 /*Rules for laptop / small desktop */
