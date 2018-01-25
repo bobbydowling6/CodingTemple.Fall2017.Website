@@ -47,11 +47,11 @@ var b = function (num1, num2, num3){
 }
 
 //Find the largest of 5 numbers
-c = 0;
-d = 2;
-e = 12;
-f = -23;
-g = -89;
+var c = 0;
+var d = 2;
+var e = 12;
+var f = -23;
+var g = -89;
 if (c>d && c>e && c>f && c>g)
 {
     alert(c);
