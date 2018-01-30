@@ -1,6 +1,7 @@
 //JavaScript Objects and Arrays
 //Problem 1
 function formatDate(date) {
+    "use strict";
   var monthNames = [
     "January", "February", "March",
     "April", "May", "June", "July",
@@ -18,8 +19,8 @@ function formatDate(date) {
 console.log(formatDate(new Date()));
 
 //Problem 2
-year = window.prompt("Input a Year: ");
-x = (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0)
+var year = window.prompt("Input a Year: ");
+var x = (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0)
 alert(x);
 
 //Problem 3
@@ -50,7 +51,7 @@ for (var i = 0; i < arr.length - 1; i++) {
 console.log(results);
 
 //Problem 5
-first = function(array, n) {
+var first = function(array, n) {
     if (array == null)
         return void 0;
     if (n == null)
@@ -58,7 +59,7 @@ first = function(array, n) {
     return array.slice(0, n)
 };
 //Problem 6
-myColor = ["Red", "Green", "White", "Black"];
+var myColor = ["Red", "Green", "White", "Black"];
 console.log(myColor.toString());
 console.log(myColor.join());
 console.log(myColor.join('+'));
@@ -279,9 +280,9 @@ function mergeSort (arr) {
     return arr
   }
 
-  const middle = Math.floor(arr.length / 2) // get the middle item of the array rounded down
-  const left = arr.slice(0, middle) // items on the left side
-  const right = arr.slice(middle) // items on the right side
+  var middle = Math.floor(arr.length / 2) // get the middle item of the array rounded down
+  var left = arr.slice(0, middle) // items on the left side
+  var right = arr.slice(middle) // items on the right side
 
   return merge(
     mergeSort(left),
@@ -291,9 +292,9 @@ function mergeSort (arr) {
 
 // compare the arrays item by item and return the concatenated result
 function merge (left, right) {
-  let result = []
-  let indexLeft = 0
-  let indexRight = 0
+  var result = [];
+  var indexLeft = 0;
+  var indexRight = 0;
 
   while (indexLeft < left.length && indexRight < right.length) {
     if (left[indexLeft] < right[indexRight]) {
@@ -308,5 +309,5 @@ function merge (left, right) {
   return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight))
 }
 
-const list = [34, 7, 23, 32, 5, 62]
+ const list = [34, 7, 23, 32, 5, 62];
 console.log(mergeSort(list));
